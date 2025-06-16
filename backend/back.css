@@ -1,0 +1,120 @@
+body.sea-theme {
+    background: linear-gradient(to right, #a0e9f1, #b3f5e1);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #e0fafa;
+    border: 2px solid #8de3c9;
+    border-radius: 12px;
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 20px rgba(0, 123, 128, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h2 {
+    color: #2a8572;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+.form-container input,
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #9fe2cf;
+    border-radius: 6px;
+    background-color: #f0fefe;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #3eb489;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2c9e7b;
+}
+
+.error-box {
+    background-color: #ffdede;
+    color: #b00020;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.form-container p {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-container a {
+    color: #007f91;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 42px; /* отступ справа, чтобы глазик не перекрывал текст */
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;      /* убираем фон */
+    border: none;          /* убираем рамку */
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* чтобы клик шёл по кнопке, не по изображению */
+}
