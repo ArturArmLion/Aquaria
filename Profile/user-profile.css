@@ -1,0 +1,260 @@
+body {
+    background-color: #AFDAFC;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 2px solid #61a0cd;
+}
+
+/* НАЗАД И LOGOUT */
+.profile-actions a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button {
+    background-color: #e0f0ff;
+    color: #0b5fa5;
+    border: 1px solid #a2c9e2;
+}
+
+.back-button:hover {
+    background-color: #c8e4ff;
+}
+
+.logout-button {
+    background-color: #ffe0e0;
+    color: #b00000;
+    border: 1px solid #dba2a2;
+}
+
+.logout-button:hover {
+    background-color: #ffc4c4;
+}
+
+/* Заголовок */
+h2 {
+    text-align: center;
+    color: #2a5d88;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* МОИ ЗАКАЗЫ */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 8px;
+    border: 1px solid #b0cde8;
+    text-align: center;
+    background-color: #f3faff;
+}
+
+.orders-table th {
+    background-color: #d4eafd;
+    font-weight: bold;
+}
+
+/* Уменьшаем шрифт и отступы в ячейках */
+.orders-table td {
+    font-size: 13px;
+}
+
+/* Режим фокуса для форм */
+input, textarea, select {
+    padding: 12px;
+    border: 2px solid #61a0cd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f7fbff;
+}
+
+/* Фокус на элементах */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2a5d88;
+    box-shadow: 0 0 5px rgba(42, 93, 136, 0.4);
+}
+
+button {
+    background-color: #2a5d88;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b4569;
+}
+
+/* Стиль для раздела заказов */
+.orders-section {
+    margin-top: 40px;
+}
+
+/* Уменьшаем расстояние между строками в таблице */
+.orders-table tbody tr {
+    height: 40px;
+}
+
+.orders-table td,
+.orders-table th {
+    padding: 8px 10px;
+}
+
+.orders-section p {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.favorites-grid {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.favorite-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.favorite-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.favorite-item button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+.favorite-item button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.favorite-item button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* КАРТА ЛОЯЛЬНОСТИ */
+.loyalty-card {
+    margin-top: 30px;
+    background: #f4f9ff;
+    padding: 15px;
+    border: 1px solid #cce5ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.loyalty-card button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.loyalty-card button:hover {
+    background: #0056b3;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.loyalty-card-box {
+    background: linear-gradient(135deg, #4da0ff, #0066cc);
+    color: white;
+    width: 320px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.loyalty-card-box h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.loyalty-card-box .card-number {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.loyalty-card-box .card-balance {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loyalty-card-box .card-footer {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.card-wrapper button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.card-wrapper button:hover {
+    background: #0056b3;
+}
+
